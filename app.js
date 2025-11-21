@@ -1,4 +1,5 @@
 console.log('app.js loaded');
+type_writer("Toko Michel est mon nom")
 // document.addEventListener('DOMContentLoaded', () => {
 //     typeWriter('.job'); // ou typeWriter('.job', { text: 'Nouveau texte' });
 // });
@@ -65,4 +66,30 @@ function typeWriter(selector, { text, typingSpeed = 120, cursorBlinkSpeed = 500 
     }
 }
 
+function type_writer(plain_text)
+{
+    let writer = document.querySelector(".job_list_writer")
+    console.log(writer.innerHTML);
+
+    //backspacee : we need to clear the previous job list before weriting the new one
+    backspace(writer);
+
+    
+}
+
+
+function backspace(writer)
+{
+    let inner_text = writer.innerHTML
+    last_char_removeed = ""
+
+    for (let index = 0; index < inner_text.length-1; index++) {
+        
+        last_char_removeed += inner_text[index];
+        
+    }
+    console.log(last_char_removeed);
+    
+
+}
 
