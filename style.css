@@ -81,7 +81,7 @@ nav a span {
     align-items: center;
     justify-content: space-between;
     padding: 0 150px;
-    max-width: 1400px;
+    width: 100%;
     gap: 80px;
 }
 
