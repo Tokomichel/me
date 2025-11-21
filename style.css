@@ -218,3 +218,18 @@ h2 {
         height: 250px;
     }
 }
+
+/* Animation du curseur terminal */
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+.terminal-cursor {
+    display: inline-block;
+    font-weight: bold;
+}
