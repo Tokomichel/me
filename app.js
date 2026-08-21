@@ -2,7 +2,7 @@
 
 
 function changeHoverImage() {
-    const image = "myself.jpg";
+    const image = "black-me.jpg";
     const profileImage = document.querySelector('.profile-image img');
     profileImage.src = image;
 }
