@@ -1,0 +1,144 @@
+.experience-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    font-family: 'Consolas', 'SFMono-Regular', 'Courier New', monospace;
+    color: #ccd6f6;
+  }
+ 
+  .experience-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 40px;
+  }
+ 
+  .experience-number {
+    color: #64ffda;
+    font-size: 14px;
+    font-weight: 400;
+  }
+ 
+  .experience-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #233554;
+    margin-left: 20px;
+  }
+ 
+  .experience-body {
+    display: flex;
+    gap: 0;
+  }
+ 
+  /* Onglets verticaux */
+  .tab-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    border-left: 2px solid #233554;
+  }
+ 
+  .tab-button {
+    all: unset;
+    cursor: pointer;
+    text-align: left;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #8892b0;
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+    white-space: nowrap;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+ 
+  .tab-button:hover,
+  .tab-button:focus-visible {
+    color: #ccd6f6;
+    background: rgba(100, 255, 218, 0.05);
+  }
+ 
+  .tab-button.active {
+    color: #64ffda;
+    background: rgba(100, 255, 218, 0.08);
+    border-left-color: #64ffda;
+  }
+ 
+  /* Panneau de détail */
+  .tab-panel {
+    flex: 1;
+    padding-left: 24px;
+  }
+ 
+  .tab-panel h3 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #ccd6f6;
+    margin: 0 0 4px;
+  }
+ 
+  .tab-panel .job-company {
+    color: #64ffda;
+  }
+ 
+  .tab-panel .job-dates {
+    font-size: 14px;
+    color: #8892b0;
+    letter-spacing: 0.5px;
+    margin: 0 0 16px;
+  }
+ 
+  .tab-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+ 
+  .tab-panel li {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a8b2d1;
+  }
+ 
+  .tab-panel li::before {
+    content: "▹";
+    color: #64ffda;
+    flex-shrink: 0;
+  }
+ 
+  /* Responsive : onglets horizontaux en dessous de 600px */
+  @media (max-width: 600px) {
+    .experience-body {
+      flex-direction: column;
+    }
+    .tab-list {
+      flex-direction: row;
+      overflow-x: auto;
+      border-left: none;
+      border-bottom: 2px solid #233554;
+    }
+    .tab-button {
+      border-left: none;
+      border-bottom: 2px solid transparent;
+      margin-left: 0;
+      margin-bottom: -2px;
+      white-space: nowrap;
+    }
+    .tab-button.active {
+      border-bottom-color: #64ffda;
+      border-left-color: transparent;
+    }
+    .tab-panel {
+      padding-left: 0;
+      padding-top: 24px;
+    }
+  }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michel Toko - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/landing_page.css">
+    <link rel="stylesheet" href="style/experience.css">
 </head>
 <body>
     <header>
@@ -38,6 +39,27 @@
         </div>
     </main>
 
-    <script src="app.js" defer></script>
+
+    <!-- Section experience-->
+
+    <section id="experience" class="experience-section">
+        <h2 class="experience-title">
+        <span class="experience-number">02.</span> Experience
+        </h2>
+ 
+        <div class="experience-body">
+            <!-- Onglets -->
+            <div class="tab-list" role="tablist" aria-label="Historique des postes">
+                <!-- Un bouton par job, généré aussi en JS plus bas -->
+            </div>
+ 
+            <!-- Panneau de détail -->
+            <div class="tab-panel" role="tabpanel"></div>
+        </div>
+    </section>
+ 
+
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/experience.js" defer></script>
 </body>
 </html>
